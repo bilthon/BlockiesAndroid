@@ -11,6 +11,9 @@ import java.util.List;
  */
 
 public class BlockiesData {
+    private final String TAG = this.getClass().getName();
+    public static final int DEFAULT_SIZE = 8;
+
     private int[] randSeed;
     private int imageData[];
     private String seed;
@@ -21,6 +24,9 @@ public class BlockiesData {
 
 
     public BlockiesData(String seed, int size){
+        if(seed == null){
+            seed = "";
+        }
         this.seed = seed.toLowerCase();
         this.randSeed = new int[]{0,0,0,0};
         seedRand(this.seed);
@@ -49,7 +55,7 @@ public class BlockiesData {
         randSeed[3] = (randSeed[3] ^(randSeed[3] >> 19) ^ t ^ (t >> 8));
         double num = (randSeed[3] >>> 0);
         double den = ((1 << 31) >>> 0);
-        return num / den;
+        return Math.abs(num / den);
     }
 
     private int createColor(){
@@ -68,7 +74,7 @@ public class BlockiesData {
         for(int y = 0; y < height; y++){
             ArrayList<Integer> row = new ArrayList<>();
             for(int x = 0; x < dataWidth; x++){
-                double r = rand() * -2.3;
+                double r = rand() * 2.3;
                 double d = Math.floor(r);
                 int add = (int) d;
                 row.add(add);
