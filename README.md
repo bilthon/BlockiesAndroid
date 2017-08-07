@@ -12,3 +12,6 @@ Port of the Blockies library used to create identicons in Mist
         android:layout_height="50dp"
         blockies:address="0xe5bdF34F4cCC483e4ca530CC7Cf2Bb18fEbE92b3"/>
 ```
+
+## Donations
+0x7d2306C55404c263F4d3DEBF839f862CeE22ead6
