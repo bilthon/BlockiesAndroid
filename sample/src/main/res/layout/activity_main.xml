@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:blockies="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="16dp"
+    android:gravity="center"
+    tools:context="blockies.ethereum.luminiasoft.com.sample.MainActivity">
+    <blockies.ethereum.luminiasoft.com.blockiesandroid.BlockiesIdenticon
+        android:id="@+id/identicon1"
+        android:layout_width="@dimen/identicon_size"
+        android:layout_height="@dimen/identicon_size"
+        blockies:address="0xe5bdF34F4cCC483e4ca530CC7Cf2Bb18fEbE92b3"/>
+    <blockies.ethereum.luminiasoft.com.blockiesandroid.BlockiesIdenticon
+        android:id="@+id/identicon2"
+        android:layout_width="@dimen/identicon_size"
+        android:layout_height="@dimen/identicon_size"
+        blockies:address="0x7d2306C55404c263F4d3DEBF839f862CeE22ead6"/>
+    <blockies.ethereum.luminiasoft.com.blockiesandroid.BlockiesIdenticon
+        android:id="@+id/identicon3"
+        android:layout_width="@dimen/identicon_size"
+        android:layout_height="@dimen/identicon_size"
+        blockies:address="0xd48a53835483a4224bb5344a4cbdc7e500a1a82a"/>
+    <blockies.ethereum.luminiasoft.com.blockiesandroid.BlockiesIdenticon
+        android:id="@+id/identicon4"
+        android:layout_width="@dimen/identicon_size"
+        android:layout_height="@dimen/identicon_size"
+        blockies:address="0x6753eb104595958bc2c2089ae889ba76d7b9dcde"/>
+    <blockies.ethereum.luminiasoft.com.blockiesandroid.BlockiesIdenticon
+        android:id="@+id/identicon5"
+        android:layout_width="@dimen/identicon_size"
+        android:layout_height="@dimen/identicon_size"
+        blockies:address="0x6629a610b72453f451a7c1f1466e75a5c9dcc664"/>
+</LinearLayout>
