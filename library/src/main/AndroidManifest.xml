@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="blockies.ethereum.luminiasoft.com.blockiesandroid"
+    package="com.luminiasoft.ethereum.blockiesandroid"
     android:versionCode="1"
     android:versionName="0.1.0">
     <application/>
